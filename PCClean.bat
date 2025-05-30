@@ -42,11 +42,6 @@ for %%d in ("%windir%\temp" "%temp%" "%localappdata%\Microsoft\Windows\INetCache
     )
 )
 
-del /q /f "C:\ProgramData\ThermalOS\OpenShellSetup_4_4_195.exe" >nul 2>&1
-del /q /f "C:\ProgramData\ThermalOS\ThermalPerformance.pow" >nul 2>&1
-del /q /f "C:\ProgramData\ThermalOS\ThermalPerformanceIdleDisabled.pow" >nul 2>&1
-del /q /f "C:\ProgramData\ThermalOS\VC_redist.x64.exe" >nul 2>&1
-
 :: Delete Windows log files
 del /s /f /q "%windir%\Logs\*.log" >NUL 2>&1
 del /s /f /q "%windir%\*.log" >NUL 2>&1
